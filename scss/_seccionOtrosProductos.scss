@@ -1,0 +1,100 @@
+/*      estilos de "OTROS PRODUCTOS"                   */
+
+
+/* animacion  */
+.animacion_op {
+    animation-name: otrosProductos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes otrosProductos {
+    0% {
+        color: $color-terciario;
+    }
+
+    25% {
+        color: $color-secundario;
+    }
+
+    50% {
+        color: $color-alternativo;
+    }
+
+    75% {
+        color: $color-alternativo2;
+    }
+
+}
+
+.grid_otrosProductos {
+    margin: 1em;
+    width: 90%;
+    /* aca aplico GRID  */
+    display: grid;
+    grid-template-areas:
+        "pdulce pdulce muffin muffin"
+        "cookie cookie . tarta"
+        "pan pan . tarta";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    /*  gradiente   */
+    background-image: linear-gradient(to bottom, $color-primario, #f222948f);
+
+}
+
+.container_otrosProductos {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: #f222948f;
+    width: 95%;
+    box-shadow: 0 0 20px $sombreado-blanco;
+    filter: grayscale(100%);
+    /*transition*/
+    transition: all 1s;
+}
+
+.container_otrosProductos:hover {
+    transform: scale(1.05, 1.05);
+    filter: grayscale(0%);
+    /* aplico Transformacion  */
+}
+
+.imagen_otrosProductos {
+    width: 20rem;
+    height: 20rem;
+}
+
+.texto_otrosProductos {
+    font-family: $tipografia-secundaria;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-primario;
+}
+
+/*    grid items     */
+
+.panMasaMadre_op {
+    grid-area: pan;
+}
+
+.cookies_op {
+    grid-area: cookie;
+}
+
+.muffins_op {
+    grid-area: muffin;
+}
+
+.panDulce_op {
+    grid-area: pdulce;
+}
+
+.tartas_op {
+    grid-area: tarta;
+    flex-direction: column;
+}

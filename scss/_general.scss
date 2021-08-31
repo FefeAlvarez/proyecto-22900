@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $tipografia-principal;
+    background-color: $color-primario;
+}
+
+
+/* estilos del main   */
+
+.main__titleContainer {
+    margin: 2em auto;
+}
+
+.main__title {
+    font-size: 4em;
+    letter-spacing: 5px;
+    font-family: $tipografia-secundaria;
+    color: $color-secundario;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.main__subtitle {
+    font-size: 2em;
+    text-align: center;
+    color: $color-primario;
+    background-color: $color-terciario;
+    width:90%;
+    margin:0 auto;
+    border-radius: 0.5em;
+}
+
+
+
+
+// uso de EACH y MAPS //
+
+$sizeEm: (
+    1: 1em,
+    2: 2em,
+    3: 3em,
+    4: 4em,
+    5: 5em,
+    6: 6em,
+    7: 7em,
+    8: 8em,
+);
+
+$marginMap: (
+    m: margin,
+    mtop: margin-top,
+    mbot: margin-bottom,
+    mrig: margin-right,
+    mlef: margin-left,    
+);
+
+$fonts: (
+    rob: 'roboto mono, monospace',
+    lat: 'lato, sans-serif',
+);
+
+@each $marginType, $marginValue in $marginMap {
+    @each $sizeKey, $sizeValue in $sizeEm {
+        .#{$marginType}-#{$sizeKey} {
+            #{$marginValue}: #{$sizeValue};
+        }
+        
+    }
+}
+
+@each $fontKey, $fontValue in $fonts {
+    @each $sizeKey, $sizeValue in $sizeEm {
+        .#{$fontKey}-#{$sizeKey} {
+            font-family: #{$fontValue};
+            font-size: #{$sizeValue};
+        }
+    }
+        
+    
+}

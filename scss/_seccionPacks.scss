@@ -1,0 +1,75 @@
+/*   ESTILOS DE  SECCION PACKS      */
+
+.packs__container {
+    width: 90%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: $color-terciario;
+    color: $color-primario;
+    margin: 0 auto;
+    border-radius: 0.5em;
+
+}
+
+.pack__vianda {
+    width: 25%;
+    text-align: center;
+    background-color: #f2f2f244;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    box-shadow: 3px 3px 10px $sombreado-blanco;
+
+    h3 {
+        font-size: 2em;
+    }
+
+    article {
+        text-align: justify;
+    }
+}
+
+
+
+
+
+.packs__parrafo {
+    color: $color-terciario;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.packs__span {
+    background-color: $color-terciario;
+    color: $color-primario;
+    font-weight: 700;
+    font-style: italic;
+    border-radius: 0.5em;
+    padding: 0.2em;
+}
+
+.packs__animacion {
+    animation-name: spanColors;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spanColors {
+    0% {
+        color: $color-primario;
+        background-color: $color-secundario;
+    }
+    33% {
+        color:$color-primario;
+        background-color: $color-alternativo2;
+    }
+
+    66% {
+        color: $color-primario;
+        background-color: $color-terciario;
+    }
+}

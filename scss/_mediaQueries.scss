@@ -1,0 +1,105 @@
+@media (max-width:768px) {
+
+    header {
+        height: $height - 50; //operacion de scss II //
+        font-family: 'Roboto Mono', monospace;
+        background-image: url(../imagenes/header.jpg);
+        color: $color-primario;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .hero__title {
+        font-size: 1.5em;
+        color: $color-primario;
+        letter-spacing: normal;
+    }
+
+    .navbar__item {
+        background-color: $color-alternativo2;
+        border-radius: 0.5em;
+    }
+
+    /* secciones */
+
+
+    .main__title {
+        font-size: 3em;
+        letter-spacing: 0px;
+        font-family: 'Lato', sans-serif;
+        color: $color-secundario;
+        text-align: center;
+    }
+
+    /*   index     */
+
+    .promos__container {
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .promos__card {
+        text-align: center;
+    }
+
+    .promos__card h3 {
+        font-size: 1.5em;
+    }
+
+    #promo__img {
+        width: 12rem;
+        height: 12rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1em;
+
+    }
+
+    .menusemanal__title {
+        color: $color-secundario;
+        text-align: center;
+        font-size: 1em;
+        letter-spacing: 0em;
+    }
+
+
+    /* packs  html */
+
+    .packs__container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: $color-terciario;
+        color: $color-primario;
+    }
+
+    .pack__vianda {
+        width: 80%;
+        margin: 1em auto;
+        text-align: center;
+        background-color: #f2f2f244;
+        padding: 1em;
+        border-radius: 1em;
+    }
+
+    /* estilos responsive de contactanos html   */
+    .map__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapNormalSize {
+        display: none;
+    }
+
+    .mapSmallSize {
+        display: inline;
+    }
+}

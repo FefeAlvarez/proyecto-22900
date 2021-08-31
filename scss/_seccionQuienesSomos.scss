@@ -1,0 +1,20 @@
+.chef__img {
+    width: 300px;
+    height:300px;
+    object-fit: contain;
+}
+
+.chef__container {
+    border: 1px solid $color-secundario;
+    background-color: $color-secundario;
+    text-align: center;
+    h3 {
+        color: $color-primario;
+        padding: 1em;
+    }
+    p {
+        color: $color-primario;
+    }
+}
+
+

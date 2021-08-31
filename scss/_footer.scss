@@ -1,0 +1,44 @@
+/*     ESTILOS DEL FOOTER      */
+
+footer {
+    /*  aplico gradiente   */
+    background-image: linear-gradient(to bottom, #f2f2f2c9, #f22294cb);
+    margin-top: 4em;
+
+
+}
+
+.footer__frase {
+    color: $color-primario;
+}
+
+.frase__span {
+    font-weight: 700;
+    font-size: 3em;
+    color: $color-primario;
+}
+
+p .frase__span {
+    text-align: end;
+}
+
+.boton__imagen {
+    width: 50px;
+    height: 50px;
+}
+
+/* aplico transform  */
+.boton__container {
+    filter: grayscale(80%) opacity(0.3)
+}
+
+.boton__container:hover {
+    transform: scale(1.05, 1.05);
+    filter: grayscale(0%);
+    filter: drop-shadow(3px 3px 1px #4444dd);
+}
+
+.firmaDW__container p {
+    text-align: center;
+    color: $color-primario;
+}

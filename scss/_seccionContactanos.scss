@@ -1,0 +1,85 @@
+/* estilos de la seccion CONTACTANOS html  */
+.formulario__label {
+    font-family: $tipografia-principal;
+    color: $color-secundario;
+}
+
+.formulario__select {
+    color: $color-secundario;
+}
+
+.formulario__select option {
+    color: $color-primario;
+    background-color: $color-secundario;
+}
+
+.formulario__select option:active {
+    color: $color-secundario;
+    background-color: $color-primario;
+}
+
+.formulario__boton {
+    background-color: $color-secundario;
+    color: $color-primario;
+    font-family: $tipografia-principal;
+    border-color: $color-alternativo2;
+    border-radius: 1em;
+    padding: 0.2em;
+    transition: all 1s;
+}
+
+.formulario__boton:hover {
+    background-color: $color-alternativo2;
+    color: $color-primario;
+}
+
+.map__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapNormalSize {
+    box-shadow: 2em;
+}
+
+.mapSmallSize {
+    display: none;
+}
+
+.redes__container {
+    margin: 1em;
+}
+
+.redes__link {
+    color: $color-secundario;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.redes__link:hover {
+    background-color: $color-secundario;
+    color: $color-primario;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    scale: (1.02, 1.02);
+}
+
+.redes__logos {
+    width: 50px;
+    height: 50px;
+}
+
+.map__parrafo {
+    text-align: justify;
+    padding: 1em;
+    margin: 1em;
+    background-color: $color-terciario;
+    color: $color-primario;
+    border-radius: 0.5em;
+}
+
+#logoLocation {
+    width: 250px;
+    height: 200px;
+}

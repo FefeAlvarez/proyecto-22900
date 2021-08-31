@@ -1,0 +1,69 @@
+/*      estilos del header      */
+
+header {
+    height: $height;
+    font-family: $tipografia-principal;
+    background-image: url(../imagenes/header.jpg);
+    color: $color-primario;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* estilos de la nav bar */
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    background-color: #f2226e6C !important;
+    position: fixed;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px $sombreado-blanco;
+    z-index: 1000;
+}
+
+.navbar__container {
+    padding: 01px;
+}
+
+.navbar__desplegable {
+    justify-content: flex-end;
+}
+
+
+.navbar__item:hover {
+    background-color: $color-secundario;
+    color: $color-primario;
+    border-radius: 1em;
+    transition: all 1s;
+}
+
+.navbar__submenu {
+    background-color: $color-alternativo2;
+}
+
+.submenu__item {
+    color: $color-primario;
+}
+
+.submenu__item:hover {
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+.navbar__logo img {
+    width: 60px;
+    height: 60px;
+   /* margin-left: 1em;*/ /*se agrego con clase del map en _general.scss*/
+}
+
+
+/*    hero     */
+.hero__container {
+    padding-top: 7em;
+    text-align: center;
+}
+/* se re-agrega con clase de map en _general.scss*/
+/*.hero__title {
+    font-size: 4em;
+}
+*/
