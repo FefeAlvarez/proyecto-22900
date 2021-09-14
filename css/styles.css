@@ -359,6 +359,12 @@ header {
   object-fit: fill;
 }
 
+.carrousel__parrafo {
+  color: #85A68E;
+  text-align: center;
+  font-size: 2em;
+}
+
 /* seccion promos */
 .promos__section {
   background-color: #f22294b6;
@@ -467,6 +473,8 @@ header {
 
 .chef__container p {
   color: #F2F2F2;
+  text-align: justify;
+  padding: 1em;
 }
 
 /*   ESTILOS DE  SECCION PACKS      */
