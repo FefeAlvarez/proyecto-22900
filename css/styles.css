@@ -302,6 +302,7 @@ header {
 
 .navbar__desplegable {
   justify-content: flex-end;
+  margin-right: 1em;
 }
 
 .navbar__item:hover {
@@ -327,8 +328,6 @@ header {
 .navbar__logo img {
   width: 60px;
   height: 60px;
-  /* margin-left: 1em;*/
-  /*se agrego con clase del map en _general.scss*/
 }
 
 /*    hero     */
@@ -337,11 +336,6 @@ header {
   text-align: center;
 }
 
-/* se re-agrega con clase de map en _general.scss*/
-/*.hero__title {
-    font-size: 4em;
-}
-*/
 /* ----------index-------*/
 /*  carrousel del index  */
 .indexFotos__container {
@@ -403,7 +397,7 @@ header {
 
 /*    seccion menu semanal   */
 .menusemanal__container {
-  margin: 6em;
+  margin: 1em;
 }
 
 .menusemanal__title {
@@ -422,7 +416,7 @@ header {
 .menusemanal__tabla {
   border: #F22294 1px solid;
   border-collapse: separate;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .menusemanal__tabla td {
@@ -452,6 +446,10 @@ header {
 
 .yt__video {
   margin: 2em;
+}
+
+.yt__video2 {
+  display: none;
 }
 
 .chef__img {
@@ -505,7 +503,12 @@ header {
 }
 
 .pack__vianda article {
-  text-align: justify;
+  text-align: center;
+}
+
+.pack__imagen {
+  height: 50%;
+  width: 50%;
 }
 
 .packs__parrafo {
@@ -782,6 +785,9 @@ p .frase__span {
     background-color: #85A68E;
     border-radius: 0.5em;
   }
+  .navbar-toggler {
+    margin-right: 1em;
+  }
   /* secciones */
   .main__title {
     font-size: 3em;
@@ -818,6 +824,23 @@ p .frase__span {
     font-size: 1em;
     letter-spacing: 0em;
   }
+  .menusemanal__tabla {
+    font-size: 0.5em;
+  }
+  /*youtube media query del index*/
+  .yt__title h3 {
+    font-size: 1em;
+    color: #F2F2F2;
+    text-align: center;
+    margin: 1em auto;
+  }
+  .yt__video2 {
+    display: inline;
+    margin: 1em auto;
+  }
+  .yt__video {
+    display: none;
+  }
   /* packs  html */
   .packs__container {
     width: 90%;
@@ -848,4 +871,10 @@ p .frase__span {
   .mapSmallSize {
     display: inline;
   }
+}
+
+/* media query del FOOTER */
+.footer__frase {
+  text-align: center;
+  margin: 1em;
 }

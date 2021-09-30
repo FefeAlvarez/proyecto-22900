@@ -27,14 +27,13 @@
     }
 
     article {
-        text-align: justify;
+        text-align: center;
     }
 }
-
-
-
-
-
+.pack__imagen{
+    height: 50%;
+    width: 50%;
+}
 .packs__parrafo {
     color: $color-terciario;
     font-size: 1.5em;
@@ -63,8 +62,9 @@
         color: $color-primario;
         background-color: $color-secundario;
     }
+
     33% {
-        color:$color-primario;
+        color: $color-primario;
         background-color: $color-alternativo2;
     }
 

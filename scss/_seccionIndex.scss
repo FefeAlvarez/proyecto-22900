@@ -65,7 +65,7 @@
 /*    seccion menu semanal   */
 
 .menusemanal__container {
-    margin: 6em;
+    margin: 1em;
 }
 
 .menusemanal__title {
@@ -84,7 +84,7 @@
 .menusemanal__tabla {
     border: $color-secundario 1px solid;
     border-collapse: separate;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .menusemanal__tabla td {
@@ -115,4 +115,7 @@
 
 .yt__video {
     margin: 2em;
+}
+.yt__video2 {
+    display: none;
 }

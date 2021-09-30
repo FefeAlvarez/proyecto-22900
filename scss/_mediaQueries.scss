@@ -21,6 +21,10 @@
         background-color: $color-alternativo2;
         border-radius: 0.5em;
     }
+    .navbar-toggler {
+        margin-right: 1em;        
+    }
+    
 
     /* secciones */
 
@@ -67,8 +71,27 @@
         font-size: 1em;
         letter-spacing: 0em;
     }
+    
+    .menusemanal__tabla {
+        font-size: 0.5em;
+    }
 
+    /*youtube media query del index*/
+     
+    .yt__title h3 {
+        font-size: 1em;
+        color: $color-primario;
+        text-align: center;
+        margin: 1em auto;
+    }
+    .yt__video2 {
+        display: inline;
+        margin: 1em auto;        
+    }
 
+    .yt__video {
+        display: none;
+    }
     /* packs  html */
 
     .packs__container {
@@ -104,4 +127,10 @@
     .mapSmallSize {
         display: inline;
     }
+}
+
+/* media query del FOOTER */
+.footer__frase {
+    text-align: center;
+    margin: 1em;
 }

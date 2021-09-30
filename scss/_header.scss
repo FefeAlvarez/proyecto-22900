@@ -27,6 +27,7 @@ header {
 
 .navbar__desplegable {
     justify-content: flex-end;
+    margin-right: 1em;
 }
 
 
@@ -53,7 +54,7 @@ header {
 .navbar__logo img {
     width: 60px;
     height: 60px;
-   /* margin-left: 1em;*/ /*se agrego con clase del map en _general.scss*/
+  
 }
 
 
@@ -62,8 +63,4 @@ header {
     padding-top: 7em;
     text-align: center;
 }
-/* se re-agrega con clase de map en _general.scss*/
-/*.hero__title {
-    font-size: 4em;
-}
-*/
+
